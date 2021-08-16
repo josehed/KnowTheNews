@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style>
+        body {
+      background-color: rgba(143, 105, 180);
+    }
+    </style>
+</head>
+<body>
+  <div><h2>Pick a topic</h2></div>
+    <div class="image-container">
+      <img [src]="topicPageUrl">
+      <button class="brexitButton" routerLink="brexit">Brexit</button>
+      <button class="climateButton" routerLink="climate">Climate</button>
+      <button class="politicsButton" routerLink="politics">Politics</button>
+      <button class="covidButton" routerLink="covid">Covid</button>
+      <button class="borisButton" routerLink="boris">Boris</button>
+      <button class="americaButton" routerLink="america">America</button>
+      <button class="militaryButton" routerLink="military">Military</button>
+      <button class="racismButton" routerLink="racism">Racism</button>
+      <button class="randomButton" (click)="randomTopic()">Random</button>
+      <router-outlet></router-outlet>
+    </div>
+</body>
+</html>

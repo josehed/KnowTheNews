@@ -1,0 +1,94 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title{
+    position: absolute;
+    text-align: center;
+}
+
+.first-txt {
+  position: absolute;
+  top: 25%;
+  text-align: 50%;
+  border-radius: 5%;
+}
+
+.startButton{
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 65%;
+  padding: 15px 60px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.startButton:hover {
+  background-color: #18628a;
+}
+
+.startButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.startButton span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.startButton:hover span {
+  padding-right: 25px;
+}
+
+.startButton:hover span:after {
+  opacity: 1;
+  right: 20;
+}
+
+h2 {
+  background-color: #3f525c;
+  padding: 1rem;
+  font-size: 3rem;
+  text-decoration: underline;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: black;
+  background-color: springgreen;
+}
+
+h3{
+  position: absolute;
+  top: 40%;
+  text-align: 50%;
+  border-radius: 5%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  color: black;
+  background-color: springgreen;
+  width: 50rem;
+}

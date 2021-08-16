@@ -1,0 +1,197 @@
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+h2 {
+  background-color: #3f525c;
+  padding: 1rem;
+  font-size: 3rem;
+  text-decoration: underline;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.brexitButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 25%;
+  left: 10%;
+  padding: 15px 75px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.brexitButton:hover {
+  background-color: #18628a;
+}
+
+.climateButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 25%;
+  left: 43%;
+  padding: 15px 65px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.climateButton:hover {
+  background-color: #18628a;
+}
+
+.covidButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 25%;
+  left: 75%;
+  padding: 15px 75px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.covidButton:hover {
+  background-color: #18628a;
+}
+
+.politicsButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 42%;
+  left: 10%;
+  padding: 15px 65px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.politicsButton:hover {
+  background-color: #18628a;
+}
+
+.americaButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 42%;
+  left: 43%;
+  padding: 15px 60px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.americaButton:hover {
+  background-color: #18628a;
+}
+
+.borisButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 42%;
+  left: 75%;
+  padding: 15px 80px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.borisButton:hover {
+  background-color: #18628a;
+}
+
+.militaryButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 60%;
+  left: 10%;
+  padding: 15px 68px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.militaryButton:hover {
+  background-color: #18628a;
+}
+
+.racismButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 60%;
+  left: 43%;
+  padding: 15px 63px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.racismButton:hover {
+  background-color: #18628a;
+}
+
+.randomButton {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background-color: #00a2fa;
+  text-align: center;
+  top: 60%;
+  left: 75%;
+  padding: 15px 60px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition-duration: 0.5s;
+}
+
+.randomButton:hover {
+  background-color: #18628a;
+}
+
+
+

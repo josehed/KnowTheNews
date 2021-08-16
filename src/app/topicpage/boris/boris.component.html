@@ -1,0 +1,81 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: rgb(86, 52, 119);
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <div class="tweet1">
+      <p>
+        {{headline_1}}
+      </p>
+    </div>
+
+  <div class="emptylistcontainer1">
+    <h3>Drag logo into box</h3>
+    <div cdkDropList #emptyList1="cdkDropList"
+      [cdkDropListData]="emptybox1" 
+      [cdkDropListConnectedTo]="[emptyList1, emptyList2]"
+      class="list" (cdkDropListDropped)="drop($event)"
+      [cdkDropListEnterPredicate]="moveFrom1Predicate">
+      <div *ngFor="let item of emptybox1" cdkDrag>
+        <img [src]="getEmpty1()" width="250" height="auto">
+      </div>
+    </div>
+  </div>
+
+  <div class="emptylistcontainer2">
+    <h3>Drag logo into box</h3>
+    <div cdkDropList #emptyList2="cdkDropList" 
+      [cdkDropListData]="emptybox2" 
+      [cdkDropListConnectedTo]="[emptyList1, emptyList2]"
+      class="list" (cdkDropListDropped)="drop($event)"
+      [cdkDropListEnterPredicate]="moveFrom2Predicate">
+      <div *ngFor="let item of emptybox2" cdkDrag>
+        <img [src]="getEmpty2()" width="250" height="auto">
+      </div>
+    </div>
+  </div>
+
+    <div class="tweet2">
+        <p>
+          {{headline_2}}
+        <br>
+      </p>
+    </div>
+    <img class="center-fit" [src]="borisPageUrl">
+
+    <div class="paperlistcontainer1">
+      <div cdkDropList #paperList1="cdkDropList" 
+        [cdkDropListData]="paperbox1" 
+        [cdkDropListConnectedTo]="[emptyList1, emptyList2]"
+        (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let item of paperbox1" cdkDrag>
+          <img [src]="getimagepb1()" width="250" height="auto">
+        </div>
+      </div>
+    </div>
+
+    <div class="paperlistcontainer2">
+      <div cdkDropList #paperList1="cdkDropList" 
+        [cdkDropListData]="paperbox2" 
+        [cdkDropListConnectedTo]="[emptyList1, emptyList2]"
+        (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let item of paperbox2" cdkDrag>
+          <img [src]="getimagepb2()" width="250" height="auto">
+        </div>
+      </div>
+    </div>
+
+    <button class="submitbutton" (click)="submitPredicate()">Submit</button>
+    <h2 class="title">Boris</h2>
+    <h1 class="first-txt">Can you place the paper with the tweet?</h1>
+    <h4 id="popupreminder"></h4>
+  </div>
+</body>
+
+</html>
+

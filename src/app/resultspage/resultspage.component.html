@@ -1,0 +1,40 @@
+<html>
+<head>
+    <style>
+        body {
+      background-color: rgba(143, 105, 180);
+    }
+    </style>
+</head>
+<body>
+  <div>
+      <h2>Pick a topic</h2>
+  </div>
+    <div class="image-container">
+      <h3>These two pie charts show the overall number of correct and incorrect answers for their corresponding newspapers.</h3>
+        <h1 class="intro-txt">You get the answer</h1>
+        <h1 class="answer" id="answer"></h1>
+      <img [src]="backgroundUrl">
+      <button class="submitbutton" routerLink="../topicpage">Pick another Question</button>
+      <router-outlet></router-outlet>
+    </div>
+    <div class = chart1 style="display: block">
+      <canvas baseChart
+              [data]="pieChartData1"
+              [labels]="pieChartLabels1"
+              [chartType]="pieChartType1">
+      </canvas>
+  </div>
+  <div class = chart2 style="display: block">
+    <canvas baseChart
+            [data]="pieChartData2"
+            [labels]="pieChartLabels2"
+            [chartType]="pieChartType2">
+    </canvas>
+</div>
+<div>
+  <h1 id ="PAPER1" class="PAPER1">Paper1</h1>
+  <h1 id ="PAPER2" class="PAPER2">Paper2</h1>
+</div>
+</body>
+</html>
